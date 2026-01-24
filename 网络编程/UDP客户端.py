@@ -13,7 +13,7 @@ client_socket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 while True:
     # 给服务端发送数据
     send_str = input('给服务端发送>>>')
-    client_socket.sendto(send_str.encode('utf-8'),('10.64.7.32',6001))
+    client_socket.sendto(send_str.encode('utf-8'),('192.168.2.103',6001))
 
     # 接受服务端的数据
     msg_data, source_addr = client_socket.recvfrom(10*1024)

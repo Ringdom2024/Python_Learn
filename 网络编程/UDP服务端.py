@@ -11,7 +11,7 @@ import socket
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
 # 绑定ip,和端口
-server_socket.bind(('10.64.7.32',6001))
+server_socket.bind(('192.168.2.103',6001))
 
 while True:
     # 接受客户端的数据
